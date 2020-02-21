@@ -27,7 +27,7 @@ spark.hadoop.fs.s3a.path.style.access true
 ```
 
 ```
-bin/spark-submit --master local --class SparkHiveTest $REPO_DIR/spark_hive_test/target/scala-2.12/spark_hive_test_2.12-0.1.jar
+bin/spark-submit --master local --class tests.SparkHiveTest $REPO_DIR/spark_hive_test/target/scala-2.12/spark_hive_test_2.12-0.1.jar
 ```
 
 
