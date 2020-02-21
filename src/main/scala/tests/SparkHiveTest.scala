@@ -21,7 +21,7 @@ object SparkHiveTest {
     import spark.implicits._
     import spark.sql
 
-    spark.sql("CREATE DATABASE IF NOT EXISTS spark_tests")
+    sql("CREATE DATABASE IF NOT EXISTS spark_tests")
     sql("CREATE EXTERNAL TABLE IF NOT EXISTS spark_tests.s3_table_1 (key INT, value STRING) STORED AS PARQUET LOCATION 's3a://spark/example_table3'")
 
     val df = (1 to 30).map(e=>(e, s"elem_$e")).toDF()
